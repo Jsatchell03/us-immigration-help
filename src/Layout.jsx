@@ -51,6 +51,7 @@ function Layout() {
               Translate
             </Link>
           </div>
+
           {/* Burger Button */}
           <div className="pr-5 md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
@@ -62,6 +63,7 @@ function Layout() {
             </button>
           </div>
         </div>
+
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden px-4 pb-4 space-y-2">

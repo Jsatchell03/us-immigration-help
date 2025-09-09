@@ -1,0 +1,263 @@
+{
+    "1":{
+        "text":  "What is your nationality?",
+        "highlighted":["nationality"],
+        "choices": "countries"
+    },
+    "2":{
+        "text": "How old are you?",
+        "highlighted": [],
+        "choices": "numberInput"
+    },
+    "3":{
+        "text": "Are you currently in the U.S.?",
+        "highlighted": [],
+        "choices": "yesNo"
+    },
+    "4":{
+        "text":"Where in the U.S. do you currently live?",
+        "highlighted": [],
+        "choices": "states"
+    },
+    "5":{
+        "text": "Do you currently hold a valid unexpired U.S. immigrant visa or permanent resident card?",
+        "highlighted":["immigrant visa", "permanent resident card"],
+        "choices":"yesNo"
+    },
+    "6":{
+        "text": "Do you currently hold a valid unexpired U.S nonimmigrant visa?",
+        "highlighted": ["nonimmigrant visa"],
+        "choices":"yesNo"
+    },
+    "7":{
+        "text": "What category of nonimmigrant visa do you currently have?",
+        "highlighted":[],
+        "choices":"nonimmigrantVisas"
+    },
+    "8":{
+        "text": "Are you trying to permanently immigrate to the US?",
+        "highlighted":[],
+        "choices": "yesNo"
+    },
+    "9":{
+        "text": "Are you trying to extend your nonimmigrant visa?",
+        "highlighted":["nonimmigrant visa"],
+        "choices": "yesNo"
+    },
+    "10":{
+        "text": "Are you trying to switch to another nonimmigrant visa category?",
+        "highlighted":["visa category"],
+        "choices": "yesNo"
+    },
+    "11":{
+        "text": "Were you admitied to the U.S. to study at a public secondary school?",
+        "highlighted": ["public secondary school"],
+        "choices": "yesNo"
+    },
+    "12":{
+        "text": "Are you transferring to a different vocational/technical school, or applying for practical training?",
+        "highlighted":["practical training"],
+        "choices": "yesNo"
+    },
+    "13":{
+        "text": " Have educational or medical reasons resulted in a delay to your course of study (not including academic probation or suspension)?",
+        "highlighted":[],
+        "choices": "yesNo"
+    },
+    "14":{
+        "text": "Based on the visa you currently hold, you cannot apply to switch your nonimmigrant visa category. You will have to apply for a new visa in the category you desire. Would you like to continue?",
+        "highlighted":["visa category"],
+        "choices": "yesNo"
+    },
+    "15":{
+        "text": "Are you trying to switch your visa category so you can go to school in the U.S.?",
+        "highlighted":["visa category"],
+        "choices":"yesNo"
+    },
+    "16":{
+        "text": "Are you planning to attend elementary, middle, or high school in the U.S.?",
+        "highlighted":[],
+        "choices": "yesNo"
+    },
+    "17":{
+        "text": "Are you planning to attend a post-secondary school part-time?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "18":{
+        "text":"What nonimmigrant visa category are you trying to switch to?",
+        "highlighted":[],
+        "choices":"nonimmigrantVisasNotSure"
+    },
+    "19":{
+        "text": "Did the training you received as a student in the U.S. provide the qualifications for the temporary worker position you're applying for?",
+        "highlighted":[],
+        "choices": "yesNo"
+    },
+    "20":{
+        "text": "Are you subject to the two-year home country physical presence requirement?",
+        "highlighted":["two-year home country physical presence requirement"],
+        "choices": "yesNo"
+    },
+    "21":{
+        "text":"You are only eligible to switch to an A, G, T, or U visa until you complete your foreign residence requirement. Would you like to continue?",
+        "highlighted":["A", "G", "T", "U"],
+        "choices":"yesNo"
+    },
+    "22":{
+        "text": "In years, how long have you been a lawful permanent resident (LPR)?",
+        "highlighted":["lawful permanent resident"],
+        "choices":"numberInput"
+    },
+    "23":{
+        "text":"Have you been married to and living with a U.S. Citizen for 3 or more years?",
+        "highlighted":[],
+        "choices": "yesNo"
+    },
+    "24":{
+        "text": "While in the U.S are you planning to consult with business associates, attend a scientific, educational, professional, or business convention, settle an estate, negotiate a contract, or conduct other business related duties?",
+        "highlighted":[],
+        "choices": "yesNo"
+    },
+    "25":{
+        "text": "Have you traveled to or been present in Democratic People's Republic of Korea, Iran, Iraq, Libya, Somalia, Sudan, Syria, or Yemen since March 1, 2011?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "26":{
+        "text": "Have you traveled to or been present in Cuba since January 12, 2021?",
+        "highlighted": [],
+        "choices":"yesNo"
+    },
+    "27":{
+        "text": "Are you a citizen of Cuba, Democratic People's Republic of Korea, Iran, Iraq, Sudan, or Syria?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "28":{
+        "text":"Do you have the unrestricted right to live in England, Scotland, Wales, Northern Ireland, the Channel Islands, and the Isle of Man?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "29":{
+        "text": "Can you prove you or a sponsor can afford all travel expenses?",
+        "highlighted": [],
+        "choices": "yesNo"
+    },
+    "30":{
+        "text":"While in the U.S are you planning to vacation, visit friends or relatives, receive medical treatment, attend social events hosted by organizations, participate in unpaid musical, sports, or similar events, or enroll in a short recreational course of study that does not count toward a degree (such as a two-day cooking class)?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "31":{
+        "text":"Are you participating in a J-1 exchange visitor program?",
+        "highlighted":["J-1 exchange visitor program"],
+        "choices":"yesNo"
+    },
+    "32":{
+        "text": "Have you been accepted to and plan to attend a student and exchange visitor program (SEVP) approved school?",
+        "highlighted":["student and exchange visitor program"],
+        "choices":"yesNo"
+    },
+    "33":{
+        "text":"Are you going to be enrolled full time at your institution?",
+        "highlighted":[],
+        "choices": "yesNo"
+    },
+    "34":{
+        "text":"Are you attending a university, college, high school, private elementary school, seminar, conservatory, or language training program?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "35":{
+        "text":"Are you trying to temporarily work in the U.S.?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "36":{
+        "text": "Are you a diplomat or foreign government official traveling to the US solely to engage in official duties or activities on behalf of your national government?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "37":{
+        "text":"Are you the personal employee of a Diplomat/Foreign Official that holds an A category visa?",
+        "highlighted":["personal employee", "A"],
+        "choices": "yesNo"
+    },
+    "38":{
+        "text": "Are you coming to the U.S for official NATO duties (as a representative, staff member, or contractor)?",
+        "highlighted":[],
+        "choices": "yesNo"
+    },
+    "39":{
+        "text":"Are you the personal employee of a NATO visa holder?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "40":{
+        "text": "Are you traveling to the US to attend meetings at, visit, or work at a designated international organization not including NATO?",
+        "highlighted":["designated international organization"],
+        "choices":"yesNo"
+    },
+    "41":{
+        "text": "Are you the personal employee of a G category visa holder?",
+        "highlighted": ["G", "personal employee"],
+        "choices": "yesNo"
+    },
+    "42":{
+        "text": "Are you a representative of a foreign news media organization traveling to the U.S. to cover news that is not intended for commercial entertainment or advertising?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "43":{
+        "text": "Are you planning to work onboard commercial sea vessels or international airlines in the United States, and intend to depart the United States within 29 days.",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "44":{
+        "text": "Are you planning to be a crew member performing ship-to-ship transfer of liquid cargo (lightering) and departing the US within 180 days?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "45":{
+        "text": "Will you have to travel to the U.S. to join the vessel you will work on?",
+        "highlighted": [],
+        "choices":"yesNo"
+    },
+    "46":{
+        "text":"Are you married to a U.S. citizen?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "47":{
+        "text": "Are you the parent of a U.S. citizen older than 21?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "48":{
+        "text":"Are you the child of a U.S. Citizen and less than 21 years old",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "49":{
+        "text": "Are you the spouse or unmarried child of a lawful permanent resident/green card holder?",
+        "highlighted":[],
+        "choices": "yesNo"
+    },
+    "50":{
+        "text": "Are you an exceptional professor or  researcher with international recognition for achievements in your field?",
+        "highlighted": [],
+        "choices": "yesNo"
+    },
+    "51":{
+        "text": "Does a company you worked for outside the U.S. for at least one year in the last three years now want to employ you in the U.S. as a manager or executive?",
+        "highlighted": [],
+        "choices": "yesNo"
+    },
+    "52":{
+        "text": "Do you have extraordinary ability in the sciences, arts, education, business, or athletics and earned sustained national or international acclaim?",
+        "highlighted": [],
+        "choices": "yesNo"
+    }
+
+}
