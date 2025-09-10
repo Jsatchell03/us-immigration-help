@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
+import Question from "./question";
 
 const choices = {
   yesNo: ["Yes", "No"],
@@ -10,7 +11,21 @@ const choices = {
 };
 
 export default function Questionnaire() {
-  const [currQuestion, setCurrQuestion] = useState(0);
+  const [questions, setQuestions] = useState({});
+  const [currQuestion, setCurrQuestion] = useState("1");
+  useEffect(() => {
+    fetch("/questions.json")
+      .then((r) => r.json())
+      .then((data) => setQuestions(data));
+  }, []);
 
-  return <div>Questionnaire</div>;
+  return (
+    <>
+      {questions[currQuestion] ? (
+        <p>{questions[currQuestion].text}</p>
+      ) : (
+        <p>Loading...</p>
+      )}
+    </>
+  );
 }
