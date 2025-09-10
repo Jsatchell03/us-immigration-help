@@ -1,3 +1,22 @@
 {
-    
+  "3": [
+    { "conditions": [{"question":"3", "operator": "==", "value": "yes" }], "goto": "4" },
+    { "conditions": [{"question":"3", "operator": "==", "value": "no" }], "goto": "5" }
+  ],
+  "4": [
+    { "conditions": [{"question":"none", "operator": "none", "value": "none" }], "goto": "5" }
+  ],
+  "5": [
+    { "conditions": [{"question":"5", "operator": "==", "value": "yes" }], "goto": "22" },
+    { "conditions": [{"question":"5", "operator": "==", "value": "no" }], "goto": "6" }
+  ],
+  "6": [
+    { "conditions": [{"question":"6", "operator": "==", "value": "yes" }], "goto": "7" },
+    { "conditions": [{"question":"6", "operator": "==", "value": "no" }, {"question":"3", "operator": "==", "value": "yes" }], "goto": "done" },
+    { "conditions": [{"question":"6", "operator": "==", "value": "no" }], "goto": "8" }
+  ],
+  "7": [
+    { "conditions": [{"question":"3", "operator": "==", "value": "yes" }], "goto": "4" },
+    { "conditions": [{"question":"3", "operator": "==", "value": "no" }], "goto": "5" }
+  ]
 }
