@@ -40,12 +40,12 @@
         "choices": "yesNo"
     },
     "9":{
-        "text": "Are you trying to extend your nonimmigrant visa?",
+        "text": "Are you trying to switch to another nonimmigrant visa category?",
         "highlighted":["nonimmigrant visa"],
         "choices": "yesNo"
     },
     "10":{
-        "text": "Are you trying to switch to another nonimmigrant visa category?",
+        "text": "Are you trying to extend your current nonimmigrant visa?",
         "highlighted":["visa category"],
         "choices": "yesNo"
     },
@@ -60,7 +60,7 @@
         "choices": "yesNo"
     },
     "13":{
-        "text": " Have educational or medical reasons resulted in a delay to your course of study (not including academic probation or suspension)?",
+        "text": "Have educational or medical reasons resulted in a delay to your course of study (not including academic probation or suspension)?",
         "highlighted":[],
         "choices": "yesNo"
     },
@@ -85,8 +85,8 @@
         "choices":"yesNo"
     },
     "18":{
-        "text":"What nonimmigrant visa category are you trying to switch to?",
-        "highlighted":[],
+        "text":"What nonimmigrant visa category are you trying to apply for?",
+        "highlighted":["nonimmigrant visa"],
         "choices":"nonimmigrantVisasNotSure"
     },
     "19":{
@@ -150,12 +150,12 @@
         "choices":"yesNo"
     },
     "31":{
-        "text":"Are you participating in a J-1 exchange visitor program?",
+        "text":"Do you plan to participate in a J-1 exchange visitor program?",
         "highlighted":["J-1 exchange visitor program"],
         "choices":"yesNo"
     },
     "32":{
-        "text": "Have you been accepted to and plan to attend a student and exchange visitor program (SEVP) approved school?",
+        "text": "Do you plan to attend a student and exchange visitor program (SEVP) approved school?",
         "highlighted":["student and exchange visitor program"],
         "choices":"yesNo"
     },
@@ -165,7 +165,7 @@
         "choices": "yesNo"
     },
     "34":{
-        "text":"Are you attending a university, college, high school, private elementary school, seminar, conservatory, or language training program?",
+        "text":"Are you planning to attend a university, college, high School, private elementary school, seminar, conservatory, or language training program in the U.S.?",
         "highlighted":[],
         "choices":"yesNo"
     },
@@ -175,7 +175,7 @@
         "choices":"yesNo"
     },
     "36":{
-        "text": "Are you a diplomat or foreign government official traveling to the US solely to engage in official duties or activities on behalf of your national government?",
+        "text": "Are you a diplomat or foreign government official traveling to the U.S. to engage in official duties or activities on behalf of your national government?",
         "highlighted":[],
         "choices":"yesNo"
     },
@@ -185,7 +185,7 @@
         "choices": "yesNo"
     },
     "38":{
-        "text": "Are you coming to the U.S for official NATO duties (as a representative, staff member, or contractor)?",
+        "text": "Are you traveling to the U.S. to complete official NATO duties as a representative, staff member, or contractor?",
         "highlighted":[],
         "choices": "yesNo"
     },
@@ -210,12 +210,12 @@
         "choices":"yesNo"
     },
     "43":{
-        "text": "Are you planning to work onboard commercial sea vessels or international airlines in the United States, and intend to depart the United States within 29 days.",
+        "text": "Are you planning to work onboard commercial sea vessels or international airlines in the U.S., and intend to depart the U.S. within 29 days.",
         "highlighted":[],
         "choices":"yesNo"
     },
     "44":{
-        "text": "Are you planning to be a crew member performing ship-to-ship transfer of liquid cargo (lightering) and departing the US within 180 days?",
+        "text": "Are you planning to be a crew member performing ship-to-ship transfer of liquid cargo (lightering) and departing the U.S. within 180 days?",
         "highlighted":[],
         "choices":"yesNo"
     },
@@ -235,13 +235,13 @@
         "choices":"yesNo"
     },
     "48":{
-        "text":"Are you the child of a U.S. Citizen and less than 21 years old",
+        "text":"Are you the child of a U.S. Citizen?",
         "highlighted":[],
         "choices":"yesNo"
     },
     "49":{
         "text": "Are you the spouse or unmarried child of a lawful permanent resident/green card holder?",
-        "highlighted":[],
+        "highlighted":["lawful permanent resident"],
         "choices": "yesNo"
     },
     "50":{
@@ -258,6 +258,26 @@
         "text": "Do you have extraordinary ability in the sciences, arts, education, business, or athletics and earned sustained national or international acclaim?",
         "highlighted": [],
         "choices": "yesNo"
+    },
+    "53":{
+        "text": "Did you receive your visa through your spouse or parent's application?",
+        "highlighted": [],
+        "choices": "yesNo"
+    },
+    "54":{
+        "text": "Based on the visa you currently hold, you cannot apply to extend your nonimmigrant visa category. You will have to apply for a new visa in the category you desire. Would you like to continue?",
+        "highlighted": ["visa category"],
+        "choices": "yesNo"
+    },
+    "55":{
+        "text": "Are you planning to attend a vocational or non-academic school in the U.S.?",
+        "highlighted":[],
+        "choices":"yesNo"
+    },
+    "56":{
+        "text": "You do not qualify for this visa. Would you like to continue and find which visa is best for you?",
+        "highlighted":[],
+        "choices":"yesNo"
     }
 
 }

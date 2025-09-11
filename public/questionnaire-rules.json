@@ -1,10 +1,12 @@
 {
+  "1":[{ "conditions": [], "goto": "2" }],
+  "2":[{ "conditions": [], "goto": "3" }],
   "3": [
     { "conditions": [{"question":"3", "operator": "==", "value": "yes" }], "goto": "4" },
     { "conditions": [{"question":"3", "operator": "==", "value": "no" }], "goto": "5" }
   ],
   "4": [
-    { "conditions": [{"question":"none", "operator": "none", "value": "none" }], "goto": "5" }
+    { "conditions": [], "goto": "5" }
   ],
   "5": [
     { "conditions": [{"question":"5", "operator": "==", "value": "yes" }], "goto": "22" },
@@ -16,7 +18,294 @@
     { "conditions": [{"question":"6", "operator": "==", "value": "no" }], "goto": "8" }
   ],
   "7": [
-    { "conditions": [{"question":"3", "operator": "==", "value": "yes" }], "goto": "4" },
-    { "conditions": [{"question":"3", "operator": "==", "value": "no" }], "goto": "5" }
+    { "conditions": [], "goto": "53" }
+  ],
+  "53":[
+    {"conditions": [], "goto": "8" }
+  ],
+  "8": [
+    { "conditions": [{"question":"8", "operator": "==", "value": "yes" }], "goto": "46" },
+    { "conditions": [{"question":"8", "operator": "==", "value": "no" }], "goto": "9" }
+  ],
+  "9": [
+    { "conditions": [{"question":"9", "operator": "==", "value": "no" }], "goto": "10" },
+    { "conditions": [{"question":"7", "operator": "in", "value": ["D", "D-3", "C-1", "C-4/D-3", "C-3", "K-1", "K-2", "K-3", "K-4", "S"]}], "goto": "14" },
+    { "conditions": [{"question":"7", "operator": "in", "value": ["J-1", "J-2"]}], "goto": "20" },
+    { "conditions": [{"question":"9", "operator": "==", "value": "yes"}], "goto": "18" }
+  ],
+  "10":[
+    { "conditions": [{"question":"10", "operator": "==", "value": "no" }], "goto": "done" },
+    { "conditions": [{"question":"7", "operator": "in", "value": ["H-1B", "H-2A", "H-2B", "H-3", "L-1", "O-1", "O-2", "P-1", "P-1S", "P-2", "P-2S", "P-3", "P-3S", "Q-1", "R-1", "E-1", "E-2", "E-3"]}], "goto": "done" },
+    { "conditions": [{"question":"7", "operator": "in", "value": ["A-1", "A-2", "C-1", "C-1/D", "C-3", "C-2", "D","D-3", "K-1", "K-2"]}], "goto": "54" },
+    { "conditions": [{"question":"7", "operator": "in", "value": ["A-3", "U-1", "U-2", "U-3", "U-4", "U-5", "U-6", "B-1", "B-2", "J-1", "G-1", "G-2", "G-3", "G-4", "G-5", "CW-2", "H-4", "L-2", "O-3", "P-4", "R-2", "TD", "T-1", "T-2", "T-3", "T-4", "T-5", "T-6", "U-1", "U-2", "U-3", "U-4", "U-5", "I"]}], "goto": "done" },
+    { "conditions": [{"question":"7", "operator": "==", "value": "F-1" }], "goto": "11" },
+    { "conditions": [{"question":"7", "operator": "==", "value": "M-1" }], "goto": "12" }
+  ],
+  "11":[
+    { "conditions": [], "goto": "done" }
+  ],
+  "12":[
+    { "conditions": [{"question":"12", "operator": "==", "value": "no" }], "goto": "13" },
+    { "conditions": [{"question":"12", "operator": "==", "value": "yes" }], "goto": "done" }
+  ],
+  "13":[
+    {"conditions": [], "goto": "done" }
+  ],
+  "14":[
+    {"conditions": [{"question":"14", "operator": "==", "value": "yes" }], "goto": "18"},
+    {"conditions": [], "goto": "done"}
+  ],
+  "18":[
+    {"conditions": [{"question":"18", "operator": "==", "value": "not sure" }], "goto": "24"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "B-1" }], "goto": "24"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "B-2" }], "goto": "30"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "J-1" }], "goto": "31"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "F-1"}], "goto": "34"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "M-1"}], "goto": "55"},
+    {"conditions": [{"question":"18", "operator": "in", "value": ["H-1B", "H-2A", "H-2B", "H-3", "L-1", "O-1", "O-2", "P-1", "P-1S", "P-2", "P-2S", "P-3", "P-3S", "Q-1", "R-1", "E-1", "E-2", "E-3"]}], "goto": "35"},
+    {"conditions": [{"question":"18", "operator": "in", "value": ["A-1", "A-2"]}], "goto": "36"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "A-3"}], "goto": "37"},
+    {"conditions": [{"question":"18", "operator": "in", "value": ["NATO-1", "NATO-2", "NATO-3", "NATO-4", "NATO-5", "NATO-6"]}], "goto": "38"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "NATO-7"}], "goto": "39"},
+    {"conditions": [{"question":"18", "operator": "in", "value": ["G-1", "G-2", "G-3", "G-4"]}], "goto": "40"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "G-5"}], "goto": "41"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "I"}], "goto": "42"},
+    {"conditions": [{"question":"18", "operator": "in", "value": ["D", "C-1/D"]}], "goto": "43"},
+    {"conditions": [{"question":"18", "operator": "in", "value": ["D-3", "C-4/D-3"]}], "goto": "44"},
+    {"conditions": [], "goto": "done"}
+  ],
+  "20":[
+    {"conditions": [{"question": "20", "operator": "==", "value":"yes"}], "goto": "21"},
+    {"conditions": [{"question": "20", "operator": "==", "value":"no"}], "goto": "18"}
+  ],
+  "21":[
+    {"conditions": [{"question": "21", "operator": "==", "value":"yes"}], "goto": "18"},
+    {"conditions": [{"question": "21", "operator": "==", "value":"no"}], "goto": "done"}
+  ],
+  "22":[
+    {"conditions": [{"question": "22", "operator": ">=", "value":"5"}], "goto": "done"},
+    {"conditions": [{"question": "22", "operator": "<", "value":"3"}], "goto": "done"},
+    {"conditions": [{"question": "22", "operator": ">=", "value":"3"}], "goto": "23"}
+  ],
+  "23":[
+    {"conditions": [], "goto": "done"}
+  ],
+  "24":[
+    {"conditions": [{"question": "24", "operator": "==", "value":"yes"}, {"question": "1", "operator": "in", "value":[
+        "Andorra",
+        "Australia",
+        "Austria",
+        "Belgium",
+        "Brunei",
+        "Chile",
+        "Croatia",
+        "Czechia",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Iceland",
+        "Ireland",
+        "Israel",
+        "Italy",
+        "Japan",
+        "Latvia",
+        "Liechtenstein",
+        "Lithuania",
+        "Luxembourg",
+        "Malta",
+        "Monaco",
+        "Netherlands",
+        "New Zealand",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "Qatar",
+        "San Marino",
+        "Singapore",
+        "Slovakia",
+        "Slovenia",
+        "South Korea",
+        "Spain",
+        "Sweden",
+        "Switzerland",
+        "Taiwan",
+        "United Kingdom"
+    ]}], "goto": "25"},
+    {"conditions": [{"question": "24", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "24", "operator": "==", "value":"no"}, {"question": "18", "operator": "==", "value":"B-1"}], "goto": "56"},
+    {"conditions": [{"question": "24", "operator": "==", "value":"no"}], "goto": "30"}
+  ],
+  "25":[
+    {"conditions": [{"question": "25", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "25", "operator": "==", "value":"no"}], "goto": "26"}
+  ],
+  "26":[
+    {"conditions": [{"question": "26", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "26", "operator": "==", "value":"no"}], "goto": "27"}
+  ],
+  "27":[
+    {"conditions": [{"question": "27", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "27", "operator": "==", "value":"no"}, {"question": "1", "operator": "==", "value":"United Kingdom"}], "goto": "28"},
+    {"conditions": [{"question": "27", "operator": "==", "value":"no"}], "goto": "done"}
+  ],
+  "28":[
+    {"conditions": [], "goto": "done"}
+  ],
+  "30":[
+    {"conditions": [{"question": "30", "operator": "==", "value":"yes"}, {"question": "1", "operator": "in", "value":[
+        "Andorra",
+        "Australia",
+        "Austria",
+        "Belgium",
+        "Brunei",
+        "Chile",
+        "Croatia",
+        "Czechia",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Iceland",
+        "Ireland",
+        "Israel",
+        "Italy",
+        "Japan",
+        "Latvia",
+        "Liechtenstein",
+        "Lithuania",
+        "Luxembourg",
+        "Malta",
+        "Monaco",
+        "Netherlands",
+        "New Zealand",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "Qatar",
+        "San Marino",
+        "Singapore",
+        "Slovakia",
+        "Slovenia",
+        "South Korea",
+        "Spain",
+        "Sweden",
+        "Switzerland",
+        "Taiwan",
+        "United Kingdom"
+    ]}], "goto": "25"},
+    {"conditions": [{"question": "30", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "30", "operator": "==", "value":"no"}, {"question": "18", "operator": "==", "value":"B-2"}], "goto": "56"},
+    {"conditions": [{"question": "30", "operator": "==", "value":"no"}], "goto": "1"}
+  ],
+  "31":[
+    {"conditions": [{"question": "31", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "31", "operator": "==", "value":"no"}, {"question": "18", "operator": "==", "value":"J-1"}], "goto": "56"},
+    {"conditions": [{"question": "31", "operator": "==", "value":"no"}], "goto": "34"}
+  ],
+  "34":[
+    {"conditions": [{"question": "34", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "34", "operator": "==", "value":"no"}, {"question": "18", "operator": "==", "value":"F-1"}], "goto": "56"},
+    {"conditions": [{"question": "34", "operator": "==", "value":"no"}], "goto": "55"}
+  ],
+  "55":[
+    {"conditions": [{"question": "55", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "55", "operator": "==", "value":"no"}, {"question": "18", "operator": "==", "value":"M-1"}], "goto": "56"},
+    {"conditions": [{"question": "55", "operator": "==", "value":"no"}], "goto": "35"}
+  ],
+  "35":[
+    {"conditions": [{"question": "35", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "35", "operator": "==", "value":"no"}, {"question": "18", "operator": "in", "value":[["H-1B", "H-2A", "H-2B", "H-3", "L-1", "O-1", "O-2", "P-1", "P-1S", "P-2", "P-2S", "P-3", "P-3S", "Q-1", "R-1", "E-1", "E-2", "E-3"]]}], "goto": "56"},
+    {"conditions": [{"question": "35", "operator": "==", "value":"no"}], "goto": "36"}
+  ],
+  "36":[
+    {"conditions": [{"question": "36", "operator": "==", "value":"no"}, {"question": "18", "operator": "in", "value":["A-1", "A-2"]}], "goto": "56"},
+    {"conditions": [], "goto": "37"}
+  ],
+  "37":[
+    {"conditions": [{"question": "37", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "37", "operator": "==", "value":"no"}, {"question": "36", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "37", "operator": "==", "value":"no"}, {"question": "18", "operator": "==", "value":"A-3"}], "goto": "56"},
+    {"conditions": [{"question": "37", "operator": "==", "value":"no"}], "goto": "38"}
+  ],
+  "38":[
+    {"conditions": [{"question": "38", "operator": "==", "value":"no"}, {"question": "18", "operator": "in", "value":["NATO-1", "NATO-2", "NATO-3", "NATO-4", "NATO-5", "NATO-6"]}], "goto": "56"},
+    {"conditions": [], "goto": "39"}
+  ],
+  "39":[
+    {"conditions": [{"question": "39", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "39", "operator": "==", "value":"no"}, {"question": "38", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "39", "operator": "==", "value":"no"}, {"question": "18", "operator": "==", "value":"NATO-7"}], "goto": "56"},
+    {"conditions": [{"question": "39", "operator": "==", "value":"no"}], "goto": "40"}
+  ],
+  "40":[
+    {"conditions": [{"question": "40", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "40", "operator": "==", "value":"no"}, {"question": "18", "operator": "in", "value":["G-1", "G-2", "G-3", "G-4"]}], "goto": "56"},
+    {"conditions": [{"question": "40", "operator": "==", "value":"no"}], "goto": "41"}
+  ],
+  "41":[
+    {"conditions": [{"question": "41", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "41", "operator": "==", "value":"no"}, {"question": "18", "operator": "==", "value":"G-5"}], "goto": "56"},
+    {"conditions": [{"question": "41", "operator": "==", "value":"no"}], "goto": "42"}
+  ],
+  "42":[
+    {"conditions": [{"question": "42", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "42", "operator": "==", "value":"no"}, {"question": "18", "operator": "==", "value":"I"}], "goto": "56"},
+    {"conditions": [{"question": "42", "operator": "==", "value":"no"}], "goto": "43"}
+  ],
+  "43":[
+    {"conditions": [{"question": "43", "operator": "==", "value":"yes"}], "goto": "45"},
+    {"conditions": [{"question": "42", "operator": "==", "value":"no"}], "goto": "44"}
+  ],
+  "44":[
+    {"conditions": [{"question": "44", "operator": "==", "value":"yes"}], "goto": "45"},
+    {"conditions": [{"question": "44", "operator": "==", "value":"no"}, {"question": "18", "operator": "in", "value":["D", "D-3", "C-1/D", "C-4/D-3"]}], "goto": "56"},
+    {"conditions": [{"question": "42", "operator": "==", "value":"no"}], "goto": "done"}
+  ],
+  "45":[
+    {"conditions": [], "goto": "done"}
+  ],
+  "46":[
+    {"conditions": [{"question": "46", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "46", "operator": "==", "value":"no"}, {"question": "2", "operator": ">=", "value":"21"}], "goto": "47"},
+    {"conditions": [{"question": "46", "operator": "==", "value":"no"}, {"question": "2", "operator": "<", "value":"21"}], "goto": "48"}
+  ],
+  "47":[
+    {"conditions": [{"question": "47", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "47", "operator": "==", "value":"no"}], "goto": "49"}
+  ],
+  "48":[
+    {"conditions": [{"question": "48", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "48", "operator": "==", "value":"no"}], "goto": "49"}
+  ],
+  "49":[
+    {"conditions": [{"question": "49", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "49", "operator": "==", "value":"no"}], "goto": "50"}
+  ],
+  "50":[
+    {"conditions": [{"question": "50", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "50", "operator": "==", "value":"no"}], "goto": "51"}
+  ],
+  "51":[
+    {"conditions": [{"question": "51", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "51", "operator": "==", "value":"no"}], "goto": "52"}
+  ],
+  "52":[
+    {"conditions": [{"question": "52", "operator": "==", "value":"yes"}], "goto": "done"},
+    {"conditions": [{"question": "52", "operator": "==", "value":"no"}], "goto": "52"}
+  ],
+  "54":[
+    {"conditions": [{"question": "54", "operator": "==", "value":"yes"}], "goto": "18"},
+    {"conditions": [{"question": "54", "operator": "==", "value":"no"}], "goto": "done"}
+  ],
+  "56":[
+    {"conditions": [{"question": "56", "operator": "==", "value":"yes"}], "goto": "24"},
+    {"conditions": [{"question": "56", "operator": "==", "value":"no"}], "goto": "done"}
   ]
 }
