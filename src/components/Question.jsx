@@ -560,9 +560,12 @@ export default function Question({
   text,
   highlighted,
   choices,
+  answers,
   setAnswers,
 }) {
   function handleChange(e) {
+    if (choices === "yesNo" && !["yes", "no"].includes(e.target.value)) return;
+
     console.log(e.target.value);
     setAnswers((prev) => ({
       ...prev,
@@ -570,19 +573,58 @@ export default function Question({
     }));
   }
   return (
-    <div className="mt-40 m-8">
+    <div className="mt-20 m-8">
       <hr className="mx-25 border-5 border-red"></hr>
       <h1 className="text-3xl text-center pt-15">{text}</h1>
       {choices === "yesNo" ? (
-        <div className="mt-8">
-          <label>
-            <input type="radio" name={id} value="yes" onChange={handleChange} />
+        <div className="mt-8 flex flex-col gap-4">
+          <label
+            htmlFor={`${id}-yes`}
+            className={`cursor-pointer border-2 border-grey1 rounded-lg w-full h-15 text-xl flex items-center justify-center
+                   ${
+                     answers[id] == "yes" ? "bg-gray-200" : ""
+                   } hover:bg-gray-300 `}
+          >
+            <input
+              type="radio"
+              id={`${id}-yes`}
+              name={id} // same group
+              value="yes"
+              checked={answers[id] === "yes"}
+              onChange={handleChange}
+              className="hidden peer"
+            />
             Yes
           </label>
-          <label>
-            <input type="radio" name={id} value="no" onChange={handleChange} />
+          <label
+            htmlFor={`${id}-no`}
+            className={`cursor-pointer border-2 border-grey1 rounded-lg w-full h-15 text-xl flex items-center justify-center
+                   ${
+                     answers[id] == "no" ? "bg-gray-200" : ""
+                   } hover:bg-gray-300 `}
+          >
+            <input
+              type="radio"
+              id={`${id}-no`}
+              name={id}
+              value="no"
+              checked={answers[id] === "no"}
+              onChange={handleChange}
+              className="hidden peer"
+            />
             No
           </label>
+        </div>
+      ) : choices === "numberInput" ? (
+        <div className="flex justify-center mt-8 md:mx-50 lg:mx-75 xlg:mx-75">
+          <input
+            className="border-2 border-grey1 w-full h-15 px-5"
+            type="number"
+            min="1"
+            max="200"
+            name={id}
+            onChange={handleChange}
+          />
         </div>
       ) : [
           "nonimmigrantVisas",
@@ -592,7 +634,7 @@ export default function Question({
         <div className="flex justify-center mt-8 md:mx-50 lg:mx-75 xlg:mx-75">
           <select
             onChange={handleChange}
-            defaultValue=""
+            value={answers[id] || ""}
             className="border-2 border-grey1 w-full h-15"
           >
             <option value="" disabled>
@@ -609,14 +651,14 @@ export default function Question({
         <div className="flex justify-center mt-8 md:mx-50 lg:mx-75 xlg:mx-75">
           <select
             onChange={handleChange}
-            defaultValue=""
+            value={answers[id] || ""}
             className="border-2 border-grey1 w-full h-15"
           >
             <option value="" disabled>
               Select one...
             </option>
             {options[choices].map((option, index) => (
-              <option key={index} value={option[0]}>
+              <option key={index} value={option}>
                 {`${option}`}
               </option>
             ))}
