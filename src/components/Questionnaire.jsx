@@ -5,7 +5,7 @@ import Question from "./question";
 export default function Questionnaire() {
   const [questions, setQuestions] = useState({});
   const [rules, setRules] = useState({});
-  const [currQuestion, setCurrQuestion] = useState("18");
+  const [currQuestion, setCurrQuestion] = useState("4");
   const [answers, setAnswers] = useState({});
   const [loading, setLoading] = useState(true);
 

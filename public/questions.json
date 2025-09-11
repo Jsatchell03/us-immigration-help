@@ -1,7 +1,7 @@
 {
     "1":{
-        "text":  "What is your nationality?",
-        "highlighted":["nationality"],
+        "text":  "What is your country of citizenship?",
+        "highlighted":[],
         "choices": "countries"
     },
     "2":{

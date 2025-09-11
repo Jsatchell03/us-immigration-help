@@ -555,10 +555,6 @@ const options = {
   ],
 };
 
-function getOptions(choices) {
-  return <></>;
-}
-
 export default function Question({
   id,
   text,
@@ -567,16 +563,18 @@ export default function Question({
   setAnswers,
 }) {
   function handleChange(e) {
+    console.log(e.target.value);
     setAnswers((prev) => ({
       ...prev,
       [id]: e.target.value,
     }));
   }
   return (
-    <div className="mt-8">
-      <h1 className="text-3xl text-center">{text}</h1>
+    <div className="mt-40 m-8">
+      <hr className="mx-25 border-5 border-red"></hr>
+      <h1 className="text-3xl text-center pt-15">{text}</h1>
       {choices === "yesNo" ? (
-        <div className="flex justify-center gap-4 mt-4">
+        <div className="mt-8">
           <label>
             <input type="radio" name={id} value="yes" onChange={handleChange} />
             Yes
@@ -586,15 +584,40 @@ export default function Question({
             No
           </label>
         </div>
-      ) : (
-        <div className="flex justify-center my-4 mx-4 border">
-          <select onChange={handleChange} defaultValue="">
+      ) : [
+          "nonimmigrantVisas",
+          "nonimmigrantVisasNotSure",
+          "immigrantVisas",
+        ].includes(choices) ? (
+        <div className="flex justify-center mt-8 md:mx-50 lg:mx-75 xlg:mx-75">
+          <select
+            onChange={handleChange}
+            defaultValue=""
+            className="border-2 border-grey1 w-full h-15"
+          >
             <option value="" disabled>
               Select one...
             </option>
             {options[choices].map((option, index) => (
               <option key={index} value={option[0]}>
                 {`${option[0]}: ${option[1]}`}
+              </option>
+            ))}
+          </select>
+        </div>
+      ) : (
+        <div className="flex justify-center mt-8 md:mx-50 lg:mx-75 xlg:mx-75">
+          <select
+            onChange={handleChange}
+            defaultValue=""
+            className="border-2 border-grey1 w-full h-15"
+          >
+            <option value="" disabled>
+              Select one...
+            </option>
+            {options[choices].map((option, index) => (
+              <option key={index} value={option[0]}>
+                {`${option}`}
               </option>
             ))}
           </select>
