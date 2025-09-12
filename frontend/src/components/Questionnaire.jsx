@@ -93,6 +93,8 @@ export default function Questionnaire() {
       } else {
         console.log("done");
         getResponse(answers);
+        // navigate to response/responseCode
+        // at that page a get request will be sent
       }
     }
   }

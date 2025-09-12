@@ -56,7 +56,7 @@
     {"conditions": [], "goto": "done"}
   ],
   "18":[
-    {"conditions": [{"question":"18", "operator": "==", "value": "not sure" }], "goto": "24"},
+    {"conditions": [{"question":"18", "operator": "==", "value": "Not Sure" }], "goto": "24"},
     {"conditions": [{"question":"18", "operator": "==", "value": "B-1" }], "goto": "24"},
     {"conditions": [{"question":"18", "operator": "==", "value": "B-2" }], "goto": "30"},
     {"conditions": [{"question":"18", "operator": "==", "value": "J-1" }], "goto": "31"},
